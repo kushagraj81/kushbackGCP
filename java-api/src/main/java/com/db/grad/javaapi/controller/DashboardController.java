@@ -21,7 +21,7 @@ public class DashboardController {
 
     //get all securities
     @GetMapping("/dashboard/securities")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://pets-webapp-dot-db-grads-0mjf-group-11.nw.r.appspot.com/")
     public List<Security> getAllBonds() {
         return securityRepository.findAll();
     }
